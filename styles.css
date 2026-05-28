@@ -198,31 +198,21 @@ body::before {
 
 .quick-registration {
   margin-top: 20px;
-  display: grid;
-  gap: 10px;
-}
-
-.quick-registration-link {
-  display: block;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.quick-registration-link:hover {
-  transform: scale(1.02);
 }
 
 .telegram-section {
   margin-top: 25px;
-  padding-bottom: 30px; /* Добавим отступ снизу */
+  padding-bottom: 30px;
 }
 
+.quick-registration-link,
 .telegram-link {
   display: block;
   text-decoration: none;
   width: 100%;
 }
 
+.reg-banner,
 .telegram-banner {
   display: block;
   width: 100%;
@@ -233,6 +223,7 @@ body::before {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.quick-registration-link:hover .reg-banner,
 .telegram-link:hover .telegram-banner {
   transform: translateY(-3px);
   box-shadow: 0 0 35px rgba(0, 242, 255, 0.6);
